@@ -1,0 +1,51 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Aufgabenplanung</title>
+</head>
+
+<body>
+    <main>
+        <div id="left-part">
+            <table id="list">
+                <tr>
+                    <th>Datum</th>
+                    <th>Modul</th>
+                    <th onclick="showButtons()">Aufgabe</th>
+                    <th>Zu Tun</th>
+                    <th>In Arbeit</th>
+                    <th>Fertig</th>
+                </tr>
+                <tr id="newInput">
+                    <th>
+                        <input type="datetime-local" id="in-time" name="in-time">
+                    </th>
+                    <th>
+                        <input type="text" id="in-modul" name="in-modul" maxlength="5">
+                    </th>
+                    <th>
+                        <input type="text" id="in-aufgabe" name="in-aufgabe" maxlength="100">
+                    </th>
+                    <th>
+                        <input type="radio" id="in-todo" name="in-state" value="todo" checked><br>
+                    </th>
+                    <th>
+                        <input type="radio" id="in-doing" name="in-state" value="doing"><br>
+                    </th>
+                    <th>
+                        <input type="radio" id="in-done" name="in-state" value="done"><br>
+                    </th>
+                </tr>
+            </table>
+            <input type="button" id="in-button" value="Add" onclick="showInput()">
+            <input type="button" id="in-send" value="Send" onclick="sendInput()">
+        </div>
+        <div id="right-part">
+            <!-- A calendar could be inserted here. Removed for privacy reasons. -->
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

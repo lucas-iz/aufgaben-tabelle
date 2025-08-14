@@ -1,0 +1,42 @@
+html {
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.is-plash-app {
+   color: white;
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+}
+
+#left-part {
+   width: 50%;
+}
+
+#right-part {
+   width: 50%;
+}
+
+table tr {
+   text-align: center;
+}
+
+#newInput {
+   display: none;
+}
+
+#in-send {
+   display: none;
+   /* float: right; */
+}
+
+#newInput td:nth-child(2) > input {
+   width: 60px;
+}
+
+#newInput td:nth-child(3) > input {
+   width: 100%;
+}
